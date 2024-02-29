@@ -18,10 +18,7 @@ app.use(cors({
    // Use cors middleware with default options
 
 // MongoDB connection setup
-mongoose.connect("mongodb://localhost:27017/chatApp", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect("mongodb://localhost:27017/chatApp" );
 
 // Define MongoDB schema and model for messages
 const MessageSchema = new mongoose.Schema({
